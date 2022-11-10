@@ -24,43 +24,67 @@
         <h2>
           WELCOME TO ANYA TICKET SITE
         </h2>
-        <div>
-          <p id="errore"></p>
+        <div class="text-danger">
+          <h1 id="errore"></h1>
         </div>
       </div>
+      <!--immagine-->
       <div class="row align-items-center">
         <div class="col-4">
-          <img src="./img/spy-family-anya-peace-512x512.png" alt="">
+          <img class="img-fluid" src="./img/spy-family-anya-peace-512x512.png" alt="">
         </div>
-
-        <div class="row align-items-center">
-          <div class="col">
-            <div class="row">
-              <div class="col-4">
-                <p>Nome :</p>
-              </div>
-              <div class="col-8">
-                <p id="nome"></p>
-              </div>
-              <div class="col-4">
-                <p>Cognome :</p>
-              </div>
-              <div class="col-8">
-                <p id="cognome"></p>
-              </div>
-              <div class="col-4">
-                <p>Età :</p>
-              </div>
-              <div class="col-8">
-                <p id="età"></p>
-              </div>
-              <div class="col-4">
-                <p>Il Prezzo Finael è :</p>
-              </div>
-              <div class="col-8">
-                <p id="prezzoFinale"></p>
-              </div>
+        <!--input ticket-->
+        <div class="col-8">
+          <div class="row informazioni align-items-center gy-3">
+            <div class="col-3">
+              <label>NOME:</label>
             </div>
+            <div class="col-9">
+              <input type="text"  id ="input-nome">
+            </div>
+            <div class="col-3 ">
+              <label>COGNOME:</label>
+            </div>
+            <div class="col-9">
+              <input type="text"  id="input-cognome">
+            </div>
+            <div class="col-3 ">
+              <label>ETA':</label>
+            </div>
+            <div class="col-9">
+              <input type="text"  id="input-età">
+            </div>
+            <div class="col-3 ">
+              <label>CHILOMETRI:</label>
+            </div>
+            <div class="col-9">
+              <input type="text"  id="input-chilometri">
+            </div>
+            
+            <div class="col-9">
+              <button id="calcolaPrezzo" type="button" class="btn btn-primary">Calocola il prezzo</button>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <!--output ticket-->
+        <div class="row align-items-center">
+          <div class="col ms-5">
+            <div class="col-4">
+              <p id="nome"></p>
+            </div>
+            <div class="col-4">
+              <p id="cognome"></p>
+            </div>
+            <div class="col-4">
+              <p id="età"></p>
+            </div>
+            <div class="col-4">
+              <p id="prezzoFinale"></p>
+            </div>
+
           </div>
         </div>
       </div>
