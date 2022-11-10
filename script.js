@@ -5,13 +5,15 @@ let età = prompt("inserisci la tua età!");
 /*---Prezzo biglietto normale-----*/
 let prezzoBglietto = (numeroKm * 0.21);
 
+/*---Prezzo con massimo 2 decimali*/ 
+let prezzoFinale = prezzoBglietto.toFixed(2);
+
 /*---i valori per lo sconto---*/
 let sconto1 = 20/100 ;
 let sconto2 = 40/100 ;
 //
-let scontoMinori = (prezzoBglietto - sconto1);
-let scontoOver65 = (prezzoBglietto - sconto2);
-
+let scontoMinori = (prezzoFinale - sconto1);
+let scontoOver65 = (prezzoFinale - sconto2);
 
 /*---Biglietto stampato con prezzo rispetto all'età*/ 
 if(età <= 0 || età >= 120 ){
@@ -54,7 +56,7 @@ console.log("Scrivi un'età giusta!!!!");
 
 --------------------------------------------------------
 
-        Prezzo finale di = ${prezzoBglietto} €
+        Prezzo finale di = ${prezzoFinale} €
 
         `
     );
